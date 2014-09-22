@@ -12,4 +12,4 @@ alias mv="mv -i"
 cs() { cd "$1" && ls; }
 
 # Default editor
-export EDITOR='vi'
+export EDITOR='vim'
