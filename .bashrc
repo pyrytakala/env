@@ -7,3 +7,6 @@ export LS_COLORS
 # Avoid accidential overrides
 alias rm="rm -i"
 alias mv="mv -i"
+
+# Faster browsing: cs = cd and ls
+cs() { cd "$1" && ls; }
