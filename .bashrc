@@ -10,3 +10,6 @@ alias mv="mv -i"
 
 # Faster browsing: cs = cd and ls
 cs() { cd "$1" && ls; }
+
+# Default editor
+export EDITOR='vi'
