@@ -18,7 +18,7 @@ abb lmd :tabe dataset_classes/lang_model.py
 set nowrap                      " don't wrap lines
 set shiftwidth=4                 " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
-set backspace=indent,eol,start  " backspace through everything in insert m⇉
+set backspace=indent,eol,start  " backspace through everything in insert mâ‡‰
 set tabstop=8                   " added by Pyry
 set softtabstop=4               " added by Pyry
 
@@ -37,7 +37,8 @@ let mapleader = ","
 map <C-L> :tabnext<cr>
 map <C-H> :tabprevious<cr>
 
-nmap <F5> "=strftime("%H:%M")<CR>P
+
+nmap <leader><F5> "=strftime("%H:%M")<CR>P
 
 nmap <leader>0 :set foldlevel=0<CR>
 nmap <leader>1 :set foldlevel=1<CR>
@@ -49,6 +50,18 @@ nmap <leader>6 :set foldlevel=6<CR>
 nmap <leader>7 :set foldlevel=7<CR>
 nmap <leader>8 :set foldlevel=8<CR>
 nmap <leader>9 :set foldlevel=99<CR>
+
+" TODO make below different for python etc (now only tex)
+map <F5> :w !compile.bat<CR>
+
+"Easier brackets
+imap ö [
+imap Ö {
+imap ä ]
+imap Ä }
+
+" Clear highlights with comma-c
+nmap <leader>c :nohlsearch<CR>
 
 " Visual mode pressing // searches for the item
 vnoremap // y/<c-r>"<cr>
@@ -63,3 +76,50 @@ if has("autocmd")
     autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
   endif
 endif
+
+
+
+
+
+" Vundle stuff
+set nocompatible              " be iMproved, required
+filetype off                  " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/vimfiles/bundle/Vundle.vim/
+let path='~/vimfiles/bundle'
+call vundle#begin(path)
+Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
+" Plugins
+Plugin 'git://github.com/davidhalter/jedi-vim'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" Put your non-Plugin stuff after this line
+
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+
+
+
+
+
+
+" Minimum lines to keep above and below cursor
+set scrolloff=3
+
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
+
+"Jump to start and end of line using the home row keys
+noremap H ^
+noremap H ^	
+
+"Use normal clipboard-copy (http://stackoverflow.com/questions/3961859/how-to-copy-to-clipboard-using-vim)
+set clipboard=unnamed
+vmap <C-c> "*y
+map <C-v> "*p
