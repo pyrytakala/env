@@ -105,7 +105,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 
 
-
+" Faster save
+map <leader>w :w<cr>
 
 
 
@@ -123,3 +124,8 @@ noremap H ^
 set clipboard=unnamed
 vmap <C-c> "*y
 map <C-v> "*p
+
+" Standard windows keys (Select all, save, undo)
+map <C-a> ggvG
+map <C-s> :w<cr>
+map <C-z> u
