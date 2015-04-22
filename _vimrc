@@ -10,9 +10,14 @@ endif
 :set guifont=Consolas:h9
 
 
+" TODO make .py file specific
 " Abbreviations
 abb pdb import pdb; pdb.set_trace()
 abb lmd :tabe dataset_classes/lang_model.py
+abb fmd :tabe dataset_classes/financial_model.py
+
+" TODO make below different for python etc (now only tex)
+map <F5> :w !compile.bat<CR>
 
 " Whitespace
 set nowrap                      " don't wrap lines
@@ -37,9 +42,6 @@ let mapleader = ","
 map <C-L> :tabnext<cr>
 map <C-H> :tabprevious<cr>
 
-
-nmap <leader><F5> "=strftime("%H:%M")<CR>P
-
 nmap <leader>0 :set foldlevel=0<CR>
 nmap <leader>1 :set foldlevel=1<CR>
 nmap <leader>2 :set foldlevel=2<CR>
@@ -50,15 +52,6 @@ nmap <leader>6 :set foldlevel=6<CR>
 nmap <leader>7 :set foldlevel=7<CR>
 nmap <leader>8 :set foldlevel=8<CR>
 nmap <leader>9 :set foldlevel=99<CR>
-
-" TODO make below different for python etc (now only tex)
-map <F5> :w !compile.bat<CR>
-
-"Easier brackets
-imap ö [
-imap Ö {
-imap ä ]
-imap Ä }
 
 " Clear highlights with comma-c
 nmap <leader>c :nohlsearch<CR>
@@ -90,7 +83,10 @@ let path='~/vimfiles/bundle'
 call vundle#begin(path)
 Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
 " Plugins
-Plugin 'git://github.com/davidhalter/jedi-vim'
+Plugin 'pep8'
+Plugin 'flake8-vim'
+Plugin 'taglist.vim' " Requires exuberant ctags (in Path)
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -105,9 +101,17 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 
 
+""" PluginSettings
+"" Flake https://github.com/andviro/flake8-vim
+" Disable automatic checks
+let g:PyFlakeOnWrite = 0
+let g:PyFlakeMaxLineLength = 80
+
+nnoremap <silent> <F8> :TlistToggle<CR>
+
+
 " Faster save
 map <leader>w :w<cr>
-
 
 
 " Minimum lines to keep above and below cursor
@@ -129,3 +133,6 @@ map <C-v> "*p
 map <C-a> ggvG
 map <C-s> :w<cr>
 map <C-z> u
+
+" Easier find and replace
+map <F3> :%s/search/replace/g
