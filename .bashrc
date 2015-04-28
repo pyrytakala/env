@@ -23,7 +23,7 @@ export LS_COLORS
 
 # Avoid accidential overrides
 function del() {
-  mv "${@}" ~/recycle
+  mv "${@}" ~/recycle/"${@}"
 }
 alias mv="mv -i"
 alias rm="echo rm disabled. Use del instead"
