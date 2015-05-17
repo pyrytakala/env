@@ -64,6 +64,7 @@ set lazyredraw					" Don't redraw while executing macros (good performance confi
 
 set scrolloff=3					" Minimum lines to keep above and below cursor
 
+set autoindent
 
 """"""""""""""""""""""""""""""""""""""
 " Keyboard shortcuts
@@ -80,7 +81,7 @@ vnoremap > >gv  				" better indentation
 noremap H ^						"Jump to start and end of line using the home row keys
 
 "Use normal clipboard-copy (http://stackoverflow.com/questions/3961859/how-to-copy-to-clipboard-using-vim)
-set clipboard=unnamed
+set clipboard=unnamedplus
 vmap <C-c> "*y
 map <C-v> "*p
 
