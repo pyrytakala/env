@@ -47,7 +47,7 @@ autocmd FileType python abb lmd :tabe dataset_classes/lang_model.py
 autocmd FileType python abb fmd :tabe dataset_classes/financial_model.py
 
 " LaTex
-autocmd FileType tex set tw=100
+autocmd FileType tex set wrap linebreak nolist
 
 " TODO make below different for python etc (now only tex)
 " map <F5> :w !compile.bat<CR>
