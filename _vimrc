@@ -83,7 +83,8 @@ vnoremap > >gv  				" better indentation
 noremap H ^						"Jump to start and end of line using the home row keys
 
 "Use normal clipboard-copy (http://stackoverflow.com/questions/3961859/how-to-copy-to-clipboard-using-vim)
-set clipboard=unnamedplus
+" http://vim.wikia.com/wiki/Easy_pasting_to_Windows_applications
+set clipboard=unnamed
 vmap <C-c> "*y
 map <C-v> "*p
 
