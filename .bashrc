@@ -40,6 +40,8 @@ function path(){
     IFS=$old
 }
 
+alias vi="vim"
+
 alias que='squeue | grep $USER'
 
 
