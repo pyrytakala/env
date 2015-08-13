@@ -26,6 +26,7 @@ function del() {
   mv "${@}" ~/recycle/"${@}"
 }
 alias mv="mv -i"
+alias mv="cp -i"
 alias rm="echo rm disabled. Use del instead"
 
 # Faster browsing: cs = cd and ls
