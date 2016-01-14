@@ -42,8 +42,11 @@ function path(){
 
 alias vi="vim"
 
+# SLURM
 alias que='squeue | grep $USER'
 
+# Git
+alias gits='git status'
 
 ##################################
 # FUNCTIONALITY
