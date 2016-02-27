@@ -55,3 +55,8 @@ alias gitc='git commit -m'
 
 # Default editor
 export EDITOR='vim'
+
+##################################
+# COMMENT IN WHEN MULTIPLE USERS ON SAME MACHINE
+##################################
+#alias vi="vim -u ~/.vimrcpyry"
