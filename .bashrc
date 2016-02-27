@@ -60,3 +60,4 @@ export EDITOR='vim'
 # COMMENT IN WHEN MULTIPLE USERS ON SAME MACHINE
 ##################################
 #alias vi="vim -u ~/.vimrcpyry"
+#tmux source-file ~/.tmux.confpyry
