@@ -2,8 +2,9 @@
 
 Download to your home directory with:
 
-`curl -sS https://raw.githubusercontent.com/pyrytakala/env/master/.bashrc >> ~/.bashrc`
-
-`curl -sS https://raw.githubusercontent.com/pyrytakala/env/master/.vimrc >> ~/.vimrc`
-
-`curl -sS https://raw.githubusercontent.com/pyrytakala/env/master/.tmux.conf > ~/.tmux.conf`
+```
+URL='https://raw.githubusercontent.com/pyrytakala/env/master/'
+curl -sS ${URL}.bashrc >> ~/.
+curl -sS ${URL}.vimrc >> ~/.
+curl -sS ${URL}.tmux.conf > ~/.
+```
