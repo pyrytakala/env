@@ -1,0 +1,2 @@
+# rename files (http://stackoverflow.com/questions/28305134/remove-first-n-character-from-bunch-of-file-names-with-cut)
+rename -n 's/(.{5})(.*)$/$2/' *.*
