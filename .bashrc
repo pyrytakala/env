@@ -53,6 +53,7 @@ alias que='squeue | grep $USER'
 
 # Git
 alias gits='git status'
+alias gitb='git branch'
 alias gitc='git commit -m'
 
 ##################################
