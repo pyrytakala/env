@@ -55,6 +55,7 @@ alias que='squeue | grep $USER'
 alias gits='git status'
 alias gitb='git branch'
 alias gitc='git commit -m'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 ##################################
 # FUNCTIONALITY
