@@ -64,6 +64,10 @@ alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 # Default editor
 export EDITOR='vim'
 
+# Python version (use python2 to launch this version)
+alias python='python3'
+
+
 ##################################
 # COMMENT IN WHEN MULTIPLE USERS ON SAME MACHINE
 ##################################
