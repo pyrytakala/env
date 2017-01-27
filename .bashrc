@@ -66,6 +66,8 @@ export EDITOR='vim'
 
 # Python version (use python2 to launch this version)
 alias python='python3'
+alias ipython='ipython3'
+alias pip='pip3'
 
 
 ##################################
