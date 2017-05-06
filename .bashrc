@@ -75,3 +75,9 @@ alias pip='pip3'
 ##################################
 #alias vi="vim -u ~/.vimrcpyry"
 #tmux source-file ~/.tmux.confpyry
+
+
+""""""""""""""""""""""""""""""""""""""
+" So I remember the syntax
+""""""""""""""""""""""""""""""""""""""
+alias night='echo sudo shutdown -h +60'
