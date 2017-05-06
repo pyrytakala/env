@@ -46,8 +46,6 @@ set background=light
 
 " Python - abbreviations
 autocmd FileType python abb pdb import pdb; pdb.set_trace()
-autocmd FileType python abb lmd :tabe dataset_classes/lang_model.py
-autocmd FileType python abb fmd :tabe dataset_classes/financial_model.py
 autocmd FileType python set shiftwidth=4                 " a tab is two spaces (or set this to 4)
 autocmd FileType python set softtabstop=4                 
 
