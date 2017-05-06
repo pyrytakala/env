@@ -108,49 +108,4 @@ map <C-z> u
 map <F3> :%s/search/replace/g
 
 
-""""""""""""""""""""""""""""""""""""""
-" So I remember the syntax
-""""""""""""""""""""""""""""""""""""""
-alias night='echo sudo shutdown -h +60'
 
-""""""""""""""""""""""""""""""""""""""
-" Vundle plugins
-""""""""""""""""""""""""""""""""""""""
-
-if has("win32")
-
-	set nocompatible              " be iMproved, required
-	filetype off                  " required
-	" set the runtime path to include Vundle and initialize
-	set rtp+=~/vimfiles/bundle/Vundle.vim/
-	let path='~/vimfiles/bundle'
-	call vundle#begin(path)
-	Plugin 'gmarik/Vundle.vim' " let Vundle manage Vundle, required
-	
-	" Plugins
-	Plugin 'pep8'
-	Plugin 'flake8-vim'
-	Plugin 'taglist.vim' " Requires exuberant ctags (in Path)
-	
-	" All of your Plugins must be added before the following line
-	call vundle#end()            " required
-	filetype plugin indent on    " required
-	" Put your non-Plugin stuff after this line
-	
-	" Brief help
-	" :PluginList       - lists configured plugins
-	" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-	" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-	" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-	"
-	" see :h vundle for more details or wiki for FAQ
-	
-	
-	""" PluginSettings
-	"" Flake https://github.com/andviro/flake8-vim
-	" Disable automatic checks
-	let g:PyFlakeOnWrite = 0
-	let g:PyFlakeMaxLineLength = 80
-	
-	nnoremap <silent> <F8> :TlistToggle<CR>
-endif
