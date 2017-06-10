@@ -108,4 +108,8 @@ map <C-z> u
 map <F3> :%s/search/replace/g
 
 
-
+" Move to beginning/end of line with B and E, and disable the defaults
+nnoremap B ^
+nnoremap E $
+nnoremap $ <nop>
+nnoremap ^ <nop>
