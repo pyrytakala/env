@@ -79,6 +79,11 @@ set scrolloff=3					" Minimum lines to keep above and below cursor
 
 set autoindent
 
+set showcmd
+set cursorline
+set wildmenu
+set showmatch
+
 """"""""""""""""""""""""""""""""""""""
 " Keyboard shortcuts
 """"""""""""""""""""""""""""""""""""""
