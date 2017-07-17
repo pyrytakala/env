@@ -26,11 +26,18 @@ set softtabstop=4
 " Delimiter
 :set colorcolumn=100
 :highlight ColorColumn guibg=Gray
+" change colors as you want to style it
+:highlight CustomTodo guifg=red guibg=green
+:highlight Heading guifg=black guibg=gray
+
+:syntax match Heading /.*HEADING.*/
+:syntax match MyQuestions /TODO/
+:syntax match MyQuestions /FIXME/
 
 " Highlight TODO, FIXME, NOTE, etc.
 if has("autocmd")
   if v:version > 701
-    autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
+    autocmd Syntax * call matchadd('Todo',  '\W\zs\(CHANGED\|XXX\|BUG\|HACK\)')
     autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\)')
   endif
 endif
