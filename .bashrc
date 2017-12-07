@@ -68,7 +68,7 @@ export EDITOR='vim'
 alias python='python3'
 alias ipython='ipython3'
 alias pip='pip3'
-
+export PYTHONIOENCODING='UTF-8'
 
 ##################################
 # COMMENT IN WHEN MULTIPLE USERS ON SAME MACHINE
