@@ -102,7 +102,7 @@ noremap H ^						"Jump to start and end of line using the home row keys
 " http://vim.wikia.com/wiki/Easy_pasting_to_Windows_applications
 set clipboard=unnamed
 vmap <C-c> "*y
-map <C-v> "*p
+" map <C-v> "*p
 
 " Standard windows keys (Select all, save, undo)
 map <C-a> ggvG
