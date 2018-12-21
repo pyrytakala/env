@@ -4,6 +4,7 @@
 
 " To undo, type :set nu!
 :set nu
+:set wrap
 
 " http://unix.stackexchange.com/questions/88879/vim-better-colors-so-comments-arent-dark-blue
 if has("gui_running")
