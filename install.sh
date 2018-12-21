@@ -6,3 +6,4 @@ curl -sS ${URL}.profile >> ~/.profile
 curl -sS ${URL}.tmux.conf > ~/.tmux.conf
 curl -sS ${URL}.ideavimrc > ~/.ideavimrc
 curl -sS ${URL}.gitignore_global > ~/.gitignore_global
+source ~/.bashrc
