@@ -11,5 +11,5 @@ chmod 700 install.sh
 
 
 ### Known issues
-- You may need to install curl: `sudo apt-get install curl`
+- You may need to install curl: `sudo apt-get install curl -y`
 - You may need to take ownership of the file: `sudo chown $USER:$USER install.sh`
