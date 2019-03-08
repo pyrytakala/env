@@ -61,6 +61,11 @@ autocmd FileType scss set softtabstop=4
 " LaTex
 autocmd FileType tex set wrap linebreak nolist
 
+" JS and HTML
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+
+
 " TODO make below different for python etc (now only tex)
 " map <F5> :w !compile.bat<CR>
 
