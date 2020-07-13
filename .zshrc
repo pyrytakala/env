@@ -66,3 +66,6 @@ export PYTHONIOENCODING='UTF-8'
 # So I remember the syntax
 ##################################
 alias night='echo sudo shutdown -h +60'
+
+# 
+ssh-add .ssh/id_rsa 
