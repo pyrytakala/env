@@ -1,18 +1,3 @@
-# .bashrc
-
-
-
-
-
-
-
-##################################
-# MACHINE-SPECIFIC
-##################################
-
-# For Python virtualenvs
-source /anaconda/bin/virtualenvwrapper.sh
-
 ##################################
 # LOOKS
 ##################################
