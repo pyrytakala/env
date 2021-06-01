@@ -1,5 +1,0 @@
-source ~/.vimrc
-
-" Overwrite .vimrc (for indentation for some reason doesnt work nicely in pycharm)
-vnoremap < <
-vnoremap > >
