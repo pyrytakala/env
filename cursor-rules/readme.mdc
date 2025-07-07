@@ -3,5 +3,5 @@ description:
 globs: README.md
 alwaysApply: false
 ---
-keep the writing concise
-dont add url-references to common libraries, i can easily find these
+- Keep the writing concise. I prefer to keep this very dense, i.e. no lengthy explanations.
+- Dont add url-references to common libraries, i can easily find these
