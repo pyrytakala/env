@@ -9,7 +9,7 @@ Project goals
 Architecture
 - Frontend: React with TypeScript, Shadcn for styling, Zustand for state management, Vite for fast build tooling.
 - Backend: Express server with TypeScript, Prisma ORM for Postgres database interaction, OpenRouter API for AI.
-- Shared: Types and schemas stored in a shared directory for validation and type inference across both frontend and backend.
+- Shared: Types and schemas stored in a shared directory for validation and type inference across both frontend and backend. `shared/types.ts` contains all data structure descriptions
 - Database: Postgres, managed using Prisma with migrations and schema definition.
 - Deployment: Local development with no current Docker for the backend, focuses on direct server interaction for now.
 - Authentication:
