@@ -1,0 +1,7 @@
+---
+description: 
+globs: README.md
+alwaysApply: false
+---
+keep the writing concise
+dont add url-references to common libraries, i can easily find these
