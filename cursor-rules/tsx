@@ -1,0 +1,8 @@
+---
+description: 
+globs: *.tsx
+alwaysApply: false
+---
+- For icons, always use react-icons
+- When writing headings, use Sentence case, not Title Case
+- When you need to call the backend, this is the way to get the URL: `const BACKEND_URL = import.meta.env.VITE_BACKEND_URL`
